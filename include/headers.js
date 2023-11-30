@@ -21,7 +21,7 @@ class indexHeader extends HTMLElement {
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="courses.html" class="get-started-btn">Get Started</a>
+       <a href="courses.html" class="get-started-btn">Get Started</a>
 
     </div>
   </header>

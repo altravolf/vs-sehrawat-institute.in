@@ -47,6 +47,14 @@
   <!-- include/trainer.js file -->
   <script src="include/trainer.js"></script>
 
+  <!-- EmailJS library -->
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('ybbTPRf18mbfO_Hjx'); // Replace with your EmailJS User ID
+    })();
+  </script>
+
 </head>
 
 <body>
@@ -56,14 +64,94 @@
   <!-- End Header -->
 
 
+
+
+
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center">
+
+
+
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
       <h1>Learning Today,<br>Leading Tomorrow</h1>
       <h2>Start preparing for NEET and other medical entrance exams </h2>
       <a href="courses.html" class="btn-get-started">Get Started</a>
     </div>
   </section><!-- End Hero -->
+
+  <div class="modal fade " id="popup" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold" id="exampleModalToggleLabel ">Get in Touch</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form class="row g-3 needs-validation" id="contactForm" novalidate>
+            <!-- Form fields -->
+            <div class="col-12">
+              <label for="name" class="form-label">Full Name:</label>
+              <input type="text" class="form-control" id="name" placeholder="Naresh Trehan" required>
+            </div>
+            <div class="col-12 mt-2">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="xyz@gmail.com" required>
+            </div>
+            <div class="col-12 mt-2">
+              <label for="mobileNo" class="form-label">Mobile No.</label>
+              <!-- <input type="tel" class="form-control" id="mobileNo" placeholder="870xxxxxxx" minlength="10"
+                maxlength="10" required> -->
+              <input type="text" class="form-control" id="mobileNo" placeholder="870xxxxxxx" minlength="10"
+                maxlength="10" pattern="[0-9]{10}" required>
+
+            </div>
+            <div class="col-12 mt-2">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" cols="30" rows="3" placeholder="Write your message...."
+                required></textarea>
+            </div>
+            <!-- <div class="col-12 mt-2 text-center">
+              <button type="submit" class="btn btn-success" id="submitBtn">Submit</button>
+            </div> -->
+
+            <!-- ... -->
+            <div class="col-12 mt-2 text-center">
+              <button type="submit" class="btn btn-success" id="submitBtn">
+                <span id="submitText">Submit</span>
+                <span class="spinner-border text-light d-none" role="status" id="spinner"></span>
+              </button>
+            </div>
+            <!-- ... -->
+
+          </form>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+    tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel2">Confirmation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="response">
+          Your form has been submitted successfully!
+        </div>
+        <div class="modal-footer">
+          <!-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+            data-bs-dismiss="modal">Close</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <main id="main">
 
@@ -89,6 +177,10 @@
   <cus-footer></cus-footer>
   <!-- End Footer -->
 
+
+
+
+
   <!-- <div id="preloader"></div> -->
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -102,6 +194,15 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+  <!-- JavaScript to handle form submission -->
+  <script type="text/javascript">
+
+
+
+  </script>
+
 
   <!-- My js code file -->
   <script src="./assets/include/myJs.js"></script>
