@@ -36,7 +36,7 @@ class cusFooter extends HTMLElement {
           <div class="col-sm">All Rights Reserved </div>
         </div>
         <div class="credits">
-          Powered by <span class="fw-bold" style="color: #00003d">Altra Volf</span>
+          Powered by <span class="fw-bold" style="color: #00003d">AltraWeb</span>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3">
